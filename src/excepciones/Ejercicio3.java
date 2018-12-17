@@ -1,3 +1,4 @@
+package excepciones;
 
 public class Ejercicio3 {
 	
@@ -22,6 +23,20 @@ public class Ejercicio3 {
 				System.out.println(i);
 			}
 		}
+	}
+	
+	public static boolean testjunit (int x) {
+		boolean centis=true;
+		
+		if(x%2==0 && x!=2) {
+			centis=false;
+		}
+		for(int i=3; i<x; i+=2) {
+			if (x%i==0) {
+				centis=false;
+			}
+		}
+		return centis;
 	}
 	public static void main(String[] args) {
 		// Muestra en pantalla cuáles de esos números son primos 
